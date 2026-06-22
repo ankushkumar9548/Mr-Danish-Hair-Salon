@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Mr Danish Hair Salon Deoband</title>
+    
+    <!-- SEO Optimization -->
+    <meta name="description" content="Browse our hairstyle gallery featuring professional fades, beard shaves, hair transformations, before & after transformations, and salon interior views in Deoband.">
+    <meta name="keywords" content="Hair Makeover, Before and After Haircut, Skin Fade Deoband, Beard Grooming Looks, Salon Interior Deoband">
+    
+    <!-- Icons & Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Sticky Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-scissors logo-icon"></i> Mr Danish <span>Salon</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="reels.html" class="nav-link">Reels</a></li>
+                <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+                <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+                <li><a href="appointment.html" class="nav-link">Appointment</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+                    <i class="fas fa-sun"></i>
+                </button>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="hero" style="background-image: url('https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&q=80&w=1920'); height: 45vh; min-height: 350px;">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="hero-tagline">Visual Lookbook</span>
+            <h1 class="hero-title">Gallery</h1>
+            <p class="hero-subtitle">Step into a world of artistic transformations, crisp shaves, and trendy fades.</p>
+        </div>
+    </header>
+
+    <!-- Gallery Section -->
+    <section class="section">
+        <div class="container">
+            
+            <!-- Filters -->
+            <div class="gallery-filters reveal">
+                <button class="tab-btn gallery-filter-btn active" data-filter="all">All Looks</button>
+                <button class="tab-btn gallery-filter-btn" data-filter="transform">Transformations</button>
+                <button class="tab-btn gallery-filter-btn" data-filter="beforeafter">Before & After</button>
+                <button class="tab-btn gallery-filter-btn" data-filter="looks">Customer Looks</button>
+                <button class="tab-btn gallery-filter-btn" data-filter="trending">Trending Styles</button>
+                <button class="tab-btn gallery-filter-btn" data-filter="interior">Salon Interior</button>
+            </div>
+
+            <!-- Masonry Grid -->
+            <div class="gallery-grid reveal">
+                
+                <!-- Item 1 -->
+                <div class="gallery-item" data-category="transform">
+                    <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&q=80&w=600" alt="Texture Crop Fade" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-item-title">Texture Crop Fade</h3>
+                        <span class="gallery-item-cat">Hair Transformations</span>
+                        <div class="gallery-item-icon"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="gallery-item" data-category="trending">
+                    <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&q=80&w=600" alt="Classic Pompadour" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-item-title">Classic Pompadour</h3>
+                        <span class="gallery-item-cat">Trending Styles</span>
+                        <div class="gallery-item-icon"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="gallery-item" data-category="beforeafter">
+                    <img src="https://images.unsplash.com/photo-1605497746444-ac9dbd324ce9?auto=format&fit=crop&q=80&w=600" alt="Complete Hair Makeover" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-item-title">Complete Makeover</h3>
+                        <span class="gallery-item-cat">Before & After</span>
+                        <div class="gallery-item-icon"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="gallery-item" data-category="interior">
+                    <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&q=80&w=600" alt="Styling Stations" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-item-title">Styling Stations</h3>
+                        <span class="gallery-item-cat">Salon Interior</span>
+                        <div class="gallery-item-icon"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="gallery-item" data-category="looks">
+                    <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=600" alt="High Fade Skin Trim" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-item-title">High Skin Fade</h3>
+                        <span class="gallery-item-cat">Customer Looks</span>
+                        <div class="gallery-item-icon"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="gallery-item" data-category="transform">
+                    <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&q=80&w=600" alt="Slick Back Undercut" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-item-title">Slick Back Undercut</h3>
+                        <span class="gallery-item-cat">Hair Transformations</span>
+                        <div class="gallery-item-icon"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                </div>
+
+                <!-- Item 7 -->
+                <div class="gallery-item" data-category="trending">
+                    <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=600" alt="Modern Mullet Drop" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-item-title">Modern Mullet Drop</h3>
+                        <span class="gallery-item-cat">Trending Styles</span>
+                        <div class="gallery-item-icon"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                </div>
+
+                <!-- Item 8 -->
+                <div class="gallery-item" data-category="interior">
+                    <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&q=80&w=600" alt="Lounge Area" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-item-title">Lounge & Groom Room</h3>
+                        <span class="gallery-item-cat">Salon Interior</span>
+                        <div class="gallery-item-icon"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                </div>
+
+                <!-- Item 9 -->
+                <div class="gallery-item" data-category="looks">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=600" alt="Client Beard Shaving Detail" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-item-title">Royal Beard Detail</h3>
+                        <span class="gallery-item-cat">Customer Looks</span>
+                        <div class="gallery-item-icon"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Custom Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span id="lightbox-close" class="lightbox-close" aria-label="Close Lightbox">&times;</span>
+        <span id="lightbox-zoom" class="lightbox-zoom" aria-label="Zoom image"><i class="fas fa-search-plus"></i></span>
+        <span id="lightbox-prev" class="lightbox-prev" aria-label="Previous image"><i class="fas fa-chevron-left"></i></span>
+        
+        <div class="lightbox-content">
+            <img id="lightbox-img" class="lightbox-img" src="" alt="Popup Large View">
+            <div id="lightbox-caption" class="lightbox-caption"></div>
+        </div>
+
+        <span id="lightbox-next" class="lightbox-next" aria-label="Next image"><i class="fas fa-chevron-right"></i></span>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="index.html" class="logo">
+                        <i class="fas fa-scissors logo-icon"></i> Mr Danish <span>Salon</span>
+                    </a>
+                    <p class="footer-about-text">
+                        Mr Danish Hair Salon in Deoband offers premium grooming, hairstyling, and modern haircutting services. Defining your personality through expert style.
+                    </p>
+                    <div class="footer-socials">
+                        <a href="https://www.instagram.com/mr.danish8433/" target="_blank" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/918433208752" target="_blank" class="social-btn" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="tel:+918433208752" class="social-btn" aria-label="Phone"><i class="fas fa-phone"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links-col">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="reels.html">Reels Showcase</a></li>
+                        <li><a href="pricing.html">Pricing Menu</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="appointment.html">Book Appointment</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-info-col">
+                    <h3 class="footer-title">Salon Info</h3>
+                    <div class="footer-info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Deoband, Uttar Pradesh, India</p>
+                    </div>
+                    <div class="footer-info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <p>+91 8433208752</p>
+                    </div>
+                    <div class="footer-info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>info@mrdanishsalon.com</p>
+                    </div>
+                    <div class="footer-info-item">
+                        <i class="fas fa-clock"></i>
+                        <p>Mon - Sun: 9:00 AM - 9:00 PM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copy">&copy; 2026 Mr Danish Hair Salon. All Rights Reserved.</p>
+                <p class="footer-developer">Designed by <a href="#" target="_blank">Antigravity AI</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/918433208752?text=Hi%20Danish,%20I'd%20like%20to%20know%20more%20about%20your%20services!" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scroll to Top -->
+    <div id="scroll-to-top" class="scroll-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+
+</body>
+</html>

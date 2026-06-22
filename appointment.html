@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment | Mr Danish Hair Salon Deoband</title>
+    
+    <!-- SEO Optimization -->
+    <meta name="description" content="Book your slot online for premium haircuts, beard styling, facial cleanup, and styling packages at Mr Danish Hair Salon in Deoband. Fast WhatsApp booking confirmation.">
+    <meta name="keywords" content="Book Haircut Deoband, Online Barber Booking, Salon Appointment Deoband, WhatsApp booking salon, Danish Ansari slot booking">
+    
+    <!-- Icons & Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Sticky Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-scissors logo-icon"></i> Mr Danish <span>Salon</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="reels.html" class="nav-link">Reels</a></li>
+                <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+                <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+                <li><a href="appointment.html" class="nav-link">Appointment</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+                    <i class="fas fa-sun"></i>
+                </button>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="hero" style="background-image: url('https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&q=80&w=1920'); height: 45vh; min-height: 350px;">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="hero-tagline">Secure Your Slot</span>
+            <h1 class="hero-title">Book Appointment</h1>
+            <p class="hero-subtitle">Reserve your luxury grooming slot. Fill out the details below to book via WhatsApp instantly.</p>
+        </div>
+    </header>
+
+    <!-- Booking Form Section -->
+    <section class="section">
+        <div class="container">
+            
+            <div class="glass-card booking-form-card reveal">
+                <h2 style="font-family: var(--font-heading); text-align: center; margin-bottom: 30px; color: var(--color-gold);"><i class="far fa-calendar-alt"></i> Appointment Form</h2>
+                
+                <form id="booking-form" novalidate>
+                    
+                    <!-- Form Row 1: Name & Phone -->
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Full Name *</label>
+                            <input type="text" id="name" class="form-control" placeholder="Enter your full name" required>
+                            <span id="name-error" class="error-message"><i class="fas fa-exclamation-circle"></i> Please enter your name (minimum 3 characters).</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Phone Number *</label>
+                            <input type="tel" id="phone" class="form-control" placeholder="10-digit mobile number" required>
+                            <span id="phone-error" class="error-message"><i class="fas fa-exclamation-circle"></i> Please enter a valid 10-digit Indian phone number.</span>
+                        </div>
+                    </div>
+
+                    <!-- Form Row 2: Email & Services Selection -->
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address (Optional)</label>
+                            <input type="email" id="email" class="form-control" placeholder="yourname@gmail.com">
+                            <span id="email-error" class="error-message"><i class="fas fa-exclamation-circle"></i> Please enter a valid email format.</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="service" class="form-label">Select Service *</label>
+                            <select id="service" class="form-control" required>
+                                <option value="" disabled selected>-- Choose a Service/Package --</option>
+                                <optgroup label="Hair Services">
+                                    <option value="haircut">Hair Cutting (₹100)</option>
+                                    <option value="styling">Hair Styling (₹150)</option>
+                                    <option value="spa">Hair Spa & Wash (₹600)</option>
+                                    <option value="color">Hair Coloring (₹500)</option>
+                                    <option value="keratin">Keratin Treatment (₹1500)</option>
+                                </optgroup>
+                                <optgroup label="Beard Services">
+                                    <option value="beard">Beard Trim & Styling (₹50)</option>
+                                    <option value="royalbeard">Royal Beard Grooming (₹150)</option>
+                                </optgroup>
+                                <optgroup label="Skincare Services">
+                                    <option value="facial">Skin Facial & Cleanup (₹300)</option>
+                                    <option value="detan">Detan Therapy (₹250)</option>
+                                </optgroup>
+                                <optgroup label="Packages & Special">
+                                    <option value="premium">Premium Package (₹300)</option>
+                                    <option value="groom">Groom Package (₹3499)</option>
+                                    <option value="wedding">Wedding Package (₹4999)</option>
+                                    <option value="reelstyle">Trending Reels Hairstyling (₹350)</option>
+                                </optgroup>
+                            </select>
+                            <span id="service-error" class="error-message"><i class="fas fa-exclamation-circle"></i> Please select a service.</span>
+                        </div>
+                    </div>
+
+                    <!-- Form Row 3: Date & Time -->
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date" class="form-label">Preferred Date *</label>
+                            <input type="date" id="date" class="form-control" required>
+                            <span id="date-error" class="error-message"><i class="fas fa-exclamation-circle"></i> Please select a valid date.</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="time" class="form-label">Preferred Time *</label>
+                            <input type="time" id="time" class="form-control" required>
+                            <span id="time-error" class="error-message"><i class="fas fa-exclamation-circle"></i> Please select a preferred time slot.</span>
+                        </div>
+                    </div>
+
+                    <!-- Message Block -->
+                    <div class="form-group">
+                        <label for="message" class="form-label">Special Instructions / Requirements (Optional)</label>
+                        <textarea id="message" class="form-control" placeholder="Any specific fade type, products, or requests..."></textarea>
+                    </div>
+
+                    <div style="text-align: center; margin-top: 30px;">
+                        <button type="submit" class="btn btn-primary" style="padding: 14px 40px;"><i class="fab fa-whatsapp"></i> Confirm via WhatsApp</button>
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Success Modal Popup -->
+    <div id="success-modal" class="success-modal">
+        <div class="glass-card success-card">
+            <div class="success-icon"><i class="fas fa-check-circle"></i></div>
+            <h3 class="success-title">Booking Validated!</h3>
+            <p class="success-desc">We are redirecting you to WhatsApp to send your pre-filled details. Please hit 'Send' on WhatsApp to finalize your slot with Danish.</p>
+            <button id="close-success-btn" class="btn btn-primary">Proceed to WhatsApp</button>
+        </div>
+    </div>
+
+    <!-- Pre-selection URL Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const serviceParam = urlParams.get('service') || urlParams.get('package');
+            if (serviceParam) {
+                const selectEl = document.getElementById('service');
+                if (selectEl) {
+                    for (let option of selectEl.options) {
+                        if (option.value === serviceParam) {
+                            option.selected = true;
+                            break;
+                        }
+                    }
+                }
+            }
+
+            // Set minimum date to today
+            const dateInput = document.getElementById('date');
+            if (dateInput) {
+                const today = new Date().toISOString().split('T')[0];
+                dateInput.setAttribute('min', today);
+            }
+        });
+    </script>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="index.html" class="logo">
+                        <i class="fas fa-scissors logo-icon"></i> Mr Danish <span>Salon</span>
+                    </a>
+                    <p class="footer-about-text">
+                        Mr Danish Hair Salon in Deoband offers premium grooming, hairstyling, and modern haircutting services. Defining your personality through expert style.
+                    </p>
+                    <div class="footer-socials">
+                        <a href="https://www.instagram.com/mr.danish8433/" target="_blank" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/918433208752" target="_blank" class="social-btn" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="tel:+918433208752" class="social-btn" aria-label="Phone"><i class="fas fa-phone"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links-col">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="reels.html">Reels Showcase</a></li>
+                        <li><a href="pricing.html">Pricing Menu</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="appointment.html">Book Appointment</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-info-col">
+                    <h3 class="footer-title">Salon Info</h3>
+                    <div class="footer-info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Deoband, Uttar Pradesh, India</p>
+                    </div>
+                    <div class="footer-info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <p>+91 8433208752</p>
+                    </div>
+                    <div class="footer-info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>info@mrdanishsalon.com</p>
+                    </div>
+                    <div class="footer-info-item">
+                        <i class="fas fa-clock"></i>
+                        <p>Mon - Sun: 9:00 AM - 9:00 PM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copy">&copy; 2026 Mr Danish Hair Salon. All Rights Reserved.</p>
+                <p class="footer-developer">Designed by <a href="#" target="_blank">Antigravity AI</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/918433208752?text=Hi%20Danish,%20I'd%20like%20to%20know%20more%20about%20your%20services!" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scroll to Top -->
+    <div id="scroll-to-top" class="scroll-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+
+</body>
+</html>
